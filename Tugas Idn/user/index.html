@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+    <body class="bg-primary-subtle">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Inventory</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="../user/index.html">User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../ruangan/index.html">Ruangan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../kategori/index.html">Kategori</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../barang/index.html">Barang</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- container -->
+
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <!-- card -->
+            <div class="card mt-4 mb-4 bg-dark bg-gradient text-light">
+                <div class="card-header">
+                    Tambah Data PIC Ruangan
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary-subtle">Nama Lengkap</span>
+                            <input type="text" class="form-control bg-primary-subtle" placeholder="Nama Lengkap" name="name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary-subtle">Username</span>
+                            <input type="text" class="form-control bg-primary-subtle" placeholder="Username" name="username">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary-subtle">Email</span>
+                            <input type="email" class="form-control bg-primary-subtle" placeholder="@example.com" name="email">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-primary-subtle">Password</span>
+                            <input type="password" class="form-control bg-primary-subtle" placeholder="********" name="password">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-plus-lg"></i>
+                            Berhasil
+                        </button>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- card end -->
+
+            <!-- show data -->
+            <div class="card bg-dark bg-gradient text-light mt-4 mb-4">
+                <div class="card-header">
+                    Data PIC Ruangan
+                </div>
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-primary">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Nama Lengkap</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Muhammad Yusuf Rivaldi</td>
+                                <td>Rivaldi</td>
+                                <td>
+                                    <a href="detail.html" type="submit" class="btn btn-primary">Detail</a>
+                                    <a href="edit.html" type="submit" class="btn btn-warning">Edit</a>
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <!-- show data end -->
+
+        </div>
+    </div>
+
+    <!-- container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
